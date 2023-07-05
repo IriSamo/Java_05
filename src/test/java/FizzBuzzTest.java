@@ -49,7 +49,9 @@ public class FizzBuzzTest {
         //arrange
         int start = -20;
         int end = -1;
-        String[] expectedResult = {"Buzz", "-19", "Fizz", "-17", "-16", "FizzBuzz", "-14", "-13", "Fizz", "-11", "Buzz", "Fizz", "-8", "-7", "Fizz", "Buzz", "-4", "Fizz", "-2", "-1"};
+        String[] expectedResult = {"Buzz", "-19", "Fizz", "-17", "-16", "FizzBuzz", "-14",
+                "-13", "Fizz", "-11", "Buzz", "Fizz", "-8", "-7", "Fizz", "Buzz", "-4",
+                "Fizz", "-2", "-1"};
 
         //act
         String[] actualResult = new FizzBuzz().fizzBuzz(start, end);
@@ -60,8 +62,7 @@ public class FizzBuzzTest {
     }
 
 
-
-    //2. Negative testing Happy path
+    //2. Negative testing Negative path
     //if (start > end)
     //return arr;
 
@@ -80,13 +81,6 @@ public class FizzBuzzTest {
         Assert.assertEquals(actualResult, expectedResult);
 
     }
-
-
-
-
-
-
-
 
 
 }
